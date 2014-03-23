@@ -7,6 +7,8 @@
       <th>Pst rate</th>
       <th>Gst rate</th>
       <th>Hst rate</th>
+      <th>Corporation</th>
+      <th>Rentals</th>
       <th></th>
       <th></th>
       <th></th>
@@ -20,6 +22,8 @@
         <td><%= order.pst_rate %></td>
         <td><%= order.gst_rate %></td>
         <td><%= order.hst_rate %></td>
+        <td><%= order.corporation %></td>
+        <td><%= order.rentals %></td>
         <td><%= link_to 'Show', order %></td>
         <td><%= link_to 'Edit', edit_order_path(order) %></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>

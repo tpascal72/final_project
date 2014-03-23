@@ -5,6 +5,8 @@
     <tr>
       <th>Name</th>
       <th>Address</th>
+      <th>Province</th>
+      <th>Orders</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,6 +18,8 @@
       <tr>
         <td><%= corporation.name %></td>
         <td><%= corporation.address %></td>
+        <td><%= corporation.province %></td>
+        <td><%= corporation.orders %></td>
         <td><%= link_to 'Show', corporation %></td>
         <td><%= link_to 'Edit', edit_corporation_path(corporation) %></td>
         <td><%= link_to 'Destroy', corporation, method: :delete, data: { confirm: 'Are you sure?' } %></td>

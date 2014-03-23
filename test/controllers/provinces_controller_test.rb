@@ -18,7 +18,7 @@ class ProvincesControllerTest < ActionController::TestCase
 
   test "should create province" do
     assert_difference('Province.count') do
-      post :create, province: { gst: @province.gst, hst: @province.hst, name: @province.name, pst: @province.pst }
+      post :create, province: { corporations: @province.corporations, gst: @province.gst, hst: @province.hst, name: @province.name, pst: @province.pst }
     end
 
     assert_redirected_to province_path(assigns(:province))
@@ -35,7 +35,7 @@ class ProvincesControllerTest < ActionController::TestCase
   end
 
   test "should update province" do
-    patch :update, id: @province, province: { gst: @province.gst, hst: @province.hst, name: @province.name, pst: @province.pst }
+    patch :update, id: @province, province: { corporations: @province.corporations, gst: @province.gst, hst: @province.hst, name: @province.name, pst: @province.pst }
     assert_redirected_to province_path(assigns(:province))
   end
 

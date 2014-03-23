@@ -8,6 +8,8 @@
       <th>Cost per hour</th>
       <th>Available</th>
       <th>Skills</th>
+      <th>Category</th>
+      <th>Rentals</th>
       <th></th>
       <th></th>
       <th></th>
@@ -22,6 +24,8 @@
         <td><%= professional.cost_per_hour %></td>
         <td><%= professional.available %></td>
         <td><%= professional.skills %></td>
+        <td><%= professional.category %></td>
+        <td><%= professional.rentals %></td>
         <td><%= link_to 'Show', professional %></td>
         <td><%= link_to 'Edit', edit_professional_path(professional) %></td>
         <td><%= link_to 'Destroy', professional, method: :delete, data: { confirm: 'Are you sure?' } %></td>

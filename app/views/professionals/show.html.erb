@@ -25,5 +25,15 @@
   <%= @professional.skills %>
 </p>
 
+<p>
+  <strong>Category:</strong>
+  <%= @professional.category %>
+</p>
+
+<p>
+  <strong>Rentals:</strong>
+  <%= @professional.rentals %>
+</p>
+
 <%= link_to 'Edit', edit_professional_path(@professional) %> |
 <%= link_to 'Back', professionals_path %>

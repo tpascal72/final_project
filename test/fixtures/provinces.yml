@@ -5,9 +5,11 @@ one:
   pst: 9.99
   gst: 9.99
   hst: 9.99
+  corporations: 
 
 two:
   name: MyString
   pst: 9.99
   gst: 9.99
   hst: 9.99
+  corporations: 

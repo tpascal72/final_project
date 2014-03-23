@@ -5,9 +5,13 @@ one:
   pst_rate: 9.99
   gst_rate: 9.99
   hst_rate: 9.99
+  corporation_id: 
+  rentals: 
 
 two:
   status: MyString
   pst_rate: 9.99
   gst_rate: 9.99
   hst_rate: 9.99
+  corporation_id: 
+  rentals: 

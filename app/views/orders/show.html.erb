@@ -20,5 +20,15 @@
   <%= @order.hst_rate %>
 </p>
 
+<p>
+  <strong>Corporation:</strong>
+  <%= @order.corporation %>
+</p>
+
+<p>
+  <strong>Rentals:</strong>
+  <%= @order.rentals %>
+</p>
+
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>

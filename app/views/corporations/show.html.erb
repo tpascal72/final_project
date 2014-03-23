@@ -10,5 +10,15 @@
   <%= @corporation.address %>
 </p>
 
+<p>
+  <strong>Province:</strong>
+  <%= @corporation.province %>
+</p>
+
+<p>
+  <strong>Orders:</strong>
+  <%= @corporation.orders %>
+</p>
+
 <%= link_to 'Edit', edit_corporation_path(@corporation) %> |
 <%= link_to 'Back', corporations_path %>

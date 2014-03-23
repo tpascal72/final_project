@@ -18,7 +18,7 @@ class RentalsControllerTest < ActionController::TestCase
 
   test "should create rental" do
     assert_difference('Rental.count') do
-      post :create, rental: { amount: @rental.amount, end_date: @rental.end_date, start_date: @rental.start_date }
+      post :create, rental: { amount: @rental.amount, end_date: @rental.end_date, order_id: @rental.order_id, professional: @rental.professional, start_date: @rental.start_date }
     end
 
     assert_redirected_to rental_path(assigns(:rental))
@@ -35,7 +35,7 @@ class RentalsControllerTest < ActionController::TestCase
   end
 
   test "should update rental" do
-    patch :update, id: @rental, rental: { amount: @rental.amount, end_date: @rental.end_date, start_date: @rental.start_date }
+    patch :update, id: @rental, rental: { amount: @rental.amount, end_date: @rental.end_date, order_id: @rental.order_id, professional: @rental.professional, start_date: @rental.start_date }
     assert_redirected_to rental_path(assigns(:rental))
   end
 

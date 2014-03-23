@@ -6,6 +6,8 @@ one:
   cost_per_hour: 9.99
   available: false
   skills: MyString
+  category_id: 
+  rentals: 
 
 two:
   fname: MyString
@@ -13,3 +15,5 @@ two:
   cost_per_hour: 9.99
   available: false
   skills: MyString
+  category_id: 
+  rentals: 

@@ -18,7 +18,7 @@ class ProfessionalsControllerTest < ActionController::TestCase
 
   test "should create professional" do
     assert_difference('Professional.count') do
-      post :create, professional: { available: @professional.available, cost_per_hour: @professional.cost_per_hour, fname: @professional.fname, lname: @professional.lname, skills: @professional.skills }
+      post :create, professional: { available: @professional.available, category_id: @professional.category_id, cost_per_hour: @professional.cost_per_hour, fname: @professional.fname, lname: @professional.lname, rentals: @professional.rentals, skills: @professional.skills }
     end
 
     assert_redirected_to professional_path(assigns(:professional))
@@ -35,7 +35,7 @@ class ProfessionalsControllerTest < ActionController::TestCase
   end
 
   test "should update professional" do
-    patch :update, id: @professional, professional: { available: @professional.available, cost_per_hour: @professional.cost_per_hour, fname: @professional.fname, lname: @professional.lname, skills: @professional.skills }
+    patch :update, id: @professional, professional: { available: @professional.available, category_id: @professional.category_id, cost_per_hour: @professional.cost_per_hour, fname: @professional.fname, lname: @professional.lname, rentals: @professional.rentals, skills: @professional.skills }
     assert_redirected_to professional_path(assigns(:professional))
   end
 

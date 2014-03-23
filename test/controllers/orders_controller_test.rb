@@ -18,7 +18,7 @@ class OrdersControllerTest < ActionController::TestCase
 
   test "should create order" do
     assert_difference('Order.count') do
-      post :create, order: { gst_rate: @order.gst_rate, hst_rate: @order.hst_rate, pst_rate: @order.pst_rate, status: @order.status }
+      post :create, order: { corporation_id: @order.corporation_id, gst_rate: @order.gst_rate, hst_rate: @order.hst_rate, pst_rate: @order.pst_rate, rentals: @order.rentals, status: @order.status }
     end
 
     assert_redirected_to order_path(assigns(:order))
@@ -35,7 +35,7 @@ class OrdersControllerTest < ActionController::TestCase
   end
 
   test "should update order" do
-    patch :update, id: @order, order: { gst_rate: @order.gst_rate, hst_rate: @order.hst_rate, pst_rate: @order.pst_rate, status: @order.status }
+    patch :update, id: @order, order: { corporation_id: @order.corporation_id, gst_rate: @order.gst_rate, hst_rate: @order.hst_rate, pst_rate: @order.pst_rate, rentals: @order.rentals, status: @order.status }
     assert_redirected_to order_path(assigns(:order))
   end
 
